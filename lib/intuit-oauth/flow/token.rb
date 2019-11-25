@@ -72,7 +72,7 @@ module IntuitOAuth
       # @return [boolean] True if successfully revoked. False otherwise
       def revoke_tokens(token)
         headers = {
-          "Content-Type": 'application/json',
+          "Content-Type" => 'application/json',
           Authorization: IntuitOAuth::Utils.get_auth_header(@client.id, @client.secret)
         }
 
